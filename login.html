@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/login.css" />
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <!-- logo -->
+      <div class="logo">
+        <img src="./assets/img/logo.png" alt="yshketch logo" />
+      </div>
+      <ul class="navbar_menu">
+        <li class="navbar_menu_item">
+          <a href="index.html" class="links">HOME</a>
+        </li>
+        <li class="navbar_menu_item">
+          <a href="shop.html" class="links">SHOP</a>
+        </li>
+        <li class="navbar_menu_item">
+          <a href="index.html" class="links">BLOG</a>
+        </li>
+        <li class="navbar_menu_item">
+          <a href="index.html" class="links">CONTACT US</a>
+        </li>
+      </ul>
+      <!-- icons -->
+      <div class="icons">
+        <a href="#">
+          <img src="./assets/img/search.png" alt="search icons" class="icons"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/cart.png" alt="cart icons" class="icons"
+        /></a>
+        <a href="login.html"
+          ><img src="./assets/img/acc.png" alt="acc icons" class="icons"
+        /></a>
+      </div>
+    </nav>
+    <h1>LOG IN</h1>
+    <div class="main-container">
+      <div class="text-center"></div>
+      <!--    LOGIN FORM   -->
+      <div class="container">
+        <form class="form" id="login">
+          <div class="form__message form__message--error"></div>
+          <div class="form__input-group">
+            <h2>EMAIL ADDRESSorUSERNAME*</h2>
+            <input
+              id="username"
+              type="text"
+              class="form__input"
+              placeholder="Email/Username"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+            <h2>PASSWORD*</h2>
+            <input
+              id="pass"
+              type="password"
+              class="form__input"
+              placeholder="*********"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__text">
+            <div>
+              <input title="person" type="checkbox" class="member" />
+              <label for="person" class="member"> Remember me </label>
+            </div>
+            <a class="form__link" href="./" id="linkForgotPass"
+              >Forgot your password?</a
+            >
+          </div>
+          <button id="logins" class="form__button" type="submit">LOG IN</button>
+        </form>
+      </div>
+    </div>
+    <button id="logins" class="btn2" type="submit">
+      NEW USER? <a href="#">Create an account</a>
+    </button>
+  </body>
+</html>

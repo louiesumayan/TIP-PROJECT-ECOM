@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'Twister';
+  src: url(/assets/font/Twister.ttf);
+}
+
+@font-face {
+  font-family: 'Devasia Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Devasia Regular'),
+    url('/assets/font/Devasia-Regular.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  --color-primary: rgb(172, 172, 172);
+  --color-primary-dark: #666;
+  --color-secondary: #252c6a;
+  --color-error: #cc3333;
+  --color-success: #6ce263;
+  --border-radius: 4px;
+
+  margin: 0;
+  font-size: 18px;
+  background-color: #121212;
+  background-size: cover;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgba(129, 124, 124, 0.572);
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  border-radius: 25px;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/* logo */
+.logo {
+  height: 0;
+}
+.logo > img {
+  width: 200px;
+  height: 55px;
+}
+/* navbar menu*/
+.navbar_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_menu > .navbar_menu_item {
+  margin-left: 40px;
+}
+/* anchor */
+.links {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.links:hover {
+  border-bottom: 1px solid lightgrey;
+  color: darkgrey;
+}
+.active {
+  border-bottom: 1px solid lightgrey;
+  color: darkgrey;
+}
+
+/* icons */
+.icons > a > img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 280px;
+  color: #ffffff;
+}
+.main-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  width: 480px;
+  max-width: 1000px;
+  height: 36%;
+  margin: 1rem;
+  padding-top: 12px;
+  padding-bottom: 15px;
+  border-radius: 20px;
+  background: rgb(94, 94, 94);
+}
+h2 {
+  font-size: 1em;
+  font-weight: lighter;
+  margin-left: 20px;
+  margin-bottom: 6px;
+}
+.container,
+.form__input,
+.form__button {
+  font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form--hidden {
+  display: none;
+}
+
+.form > *:first-child {
+  margin-top: 0;
+}
+
+.form > *:last-child {
+  margin-bottom: 0;
+}
+
+.form__message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form__message--success {
+  color: var(--color-success);
+}
+
+.form__message--error {
+  color: var(--color-error);
+}
+
+.form__input-group {
+  margin-bottom: 1.5rem;
+}
+
+.form__input {
+  display: block;
+  width: 85%;
+  margin-left: 20px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background: #9c9c9c;
+}
+
+.form__input:focus {
+  border-color: var(--color-primary);
+  background: #ffffff;
+}
+
+.form__input--error {
+  color: var(--color-error);
+  border-color: var(--color-error);
+}
+
+.form__input-error-message {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+}
+
+.form__button {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 113px;
+  padding: 1rem 2rem;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--color-primary);
+}
+
+.form__button:hover {
+  background: var(--color-primary-dark);
+}
+
+.form__button:active {
+  transform: scale(0.98);
+}
+
+.form__text {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+.btn2 {
+  width: 22%;
+  margin-top: 20px;
+  margin-left: 113px;
+  padding: 1rem;
+  margin-left: 735px;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  color: #000000;
+  border: none;
+  outline: none;
+  background: var(--color-primary);
+}
