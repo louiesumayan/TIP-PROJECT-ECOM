@@ -1,0 +1,235 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: white;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgba(129, 124, 124, 0.572);
+  display: flex;
+  padding: 1em;
+  justify-content: space-between;
+  border-radius: 25px;
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  width: 100%;
+  margin-bottom: 10em;
+}
+
+/* logo */
+.logo {
+  height: 0;
+}
+.logo > img {
+  width: 200px;
+  height: 55px;
+}
+/* navbar menu*/
+.navbar_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_menu > .navbar_menu_item {
+  margin-left: 40px;
+}
+/* anchor */
+.links {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.links:hover {
+  border-bottom: 1px solid lightgrey;
+  color: darkgrey;
+}
+.active {
+  border-bottom: 1px solid lightgrey;
+  color: darkgrey;
+}
+
+/* icons */
+.icons > a > img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.header {
+  position: absolute;
+  top: 3%;
+}
+.container {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: gray;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container header {
+  font-size: 30px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.container form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 399px;
+  background-color: gray;
+  overflow: hidden;
+  text-align: center;
+}
+.container form .form {
+  position: absolute;
+  background-color: gray;
+  transition: 0.3s ease;
+}
+.container form .form.second {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+}
+form.secActive .form.second {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+form.secActive .form.first {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+}
+
+.container form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+form .fields .input-field,
+.reg-btn label {
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  width: calc(90% / 2 - 15px);
+}
+.input-field label,
+.reg-btn label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+.input-field input,
+select {
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+.input-field select,
+.input-field input[type='date'] {
+  color: #707070;
+}
+.input-field input[type='date']:valid {
+  color: #333;
+}
+.reg-btn {
+  position: relative;
+  color: black;
+}
+.reg-btn label {
+  position: absolute;
+  bottom: 107%;
+  right: 40%;
+}
+
+.submit {
+  margin-top: 2em;
+  margin-right: 1em;
+  padding: 1em;
+  padding-left: 1.9em;
+  padding-right: 1.9em;
+  cursor: pointer;
+  border-radius: 2em;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  display: flex;
+  position: absolute;
+  left: 30%;
+  top: 95%;
+}
+.submit:hover {
+  background-color: green;
+  border: none;
+}
+.reset {
+  padding: 1em;
+  padding-left: 1.9em;
+  padding-right: 1.9em;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2em;
+  border: none;
+  position: absolute;
+  right: 35%;
+  top: 103%;
+  font-weight: bold;
+}
+.reset:hover {
+  background-color: red;
+  border: none;
+}
+@media (max-width: 750px) {
+  .container form {
+    overflow-y: scroll;
+  }
+  .container form::-webkit-scrollbar {
+    display: none;
+  }
+  form .fields .input-field {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+@media (max-width: 550px) {
+  form .fields .input-field {
+    width: 100%;
+  }
+}

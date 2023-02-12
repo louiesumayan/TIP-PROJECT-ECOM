@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reg.css" />
+    <script src="assets/js/reg.js"></script>
+    <title>Responsive Regisration Form</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- logo -->
+      <div class="logo">
+        <img src="./assets/img/logo.png" alt="yshketch logo" />
+      </div>
+      <ul class="navbar_menu">
+        <li class="navbar_menu_item">
+          <a href="index.html" class="links">HOME</a>
+        </li>
+        <li class="navbar_menu_item">
+          <a href="shop.html" class="links">SHOP</a>
+        </li>
+        <li class="navbar_menu_item">
+          <a href="#blog" class="links">BLOG</a>
+        </li>
+        <li class="navbar_menu_item">
+          <a href="index.html" class="links">CONTACT US</a>
+        </li>
+      </ul>
+      <!-- icons -->
+      <div class="icons">
+        <a href="#">
+          <img src="./assets/img/search.png" alt="search icons" class="icons"
+        /></a>
+        <a href="#"
+          ><img src="./assets/img/cart.png" alt="cart icons" class="icons"
+        /></a>
+        <a href="login.html"
+          ><img src="./assets/img/acc.png" alt="acc icons" class="icons"
+        /></a>
+      </div>
+    </nav>
+    <div class="header">
+      <br />
+      <br />
+      <br /><br /><br />
+      <h1>CREATE ACCOUNT</h1>
+    </div>
+    <div class="container">
+      <form name="myForm" onsubmit="return validateForm()">
+        <div class="form first">
+          <div class="details personal">
+            <div class="fields">
+              <div class="input-field">
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="fname"
+                  name="fname"
+                />
+              </div>
+              <div class="input-field">
+                <label for="lname">Last name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="lname"
+                  name="lname"
+                />
+              </div>
+              <div class="input-field">
+                <label for="ename">Email Address</label>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  id="ename"
+                  name="ename"
+                />
+              </div>
+              <!-- <div class="input-field">
+                <label>Age</label>
+                <input type="number" placeholder="Enter your age"  />
+              </div> -->
+              <div class="input-field">
+                <label for="pword">Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  id="pword"
+                  name="pword"
+                />
+              </div>
+              <!-- <div class="input-field">
+                <label>Birthdate</label>
+                <input type="date" placeholder="Enter birth date"  />
+              </div> -->
+
+              <div class="input-field">
+                <label for="bday">Birthdate</label>
+                <input
+                  type="date"
+                  placeholder="Enter birth date"
+                  id="bday"
+                  name="bday"
+                />
+              </div>
+
+              <div class="input-field">
+                <label for="mobileNo">Mobile Number</label>
+                <input
+                  type="number"
+                  placeholder="Enter mobile number"
+                  id="mobileNo"
+                  name="mobileNo"
+                />
+              </div>
+
+              <!-- <div class="input-field">
+                <label>Username</label>
+                <input type="text" placeholder="Enter your username"  />
+              </div> -->
+              <div class="input-field">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  placeholder="Enter your Address"
+                  id="address"
+                  name="address"
+                />
+              </div>
+              <!-- <div class="input-field">
+                <label>Re-type Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  
+                />
+              </div> -->
+              <div class="reg-btn">
+                <label> Gender</label>
+                Male <input title="person" type="radio" /> Female
+                <input title="other" type="radio" /> Prefer Not To Say
+                <input title="other" type="radio" />
+              </div>
+            </div>
+          </div>
+          <input type="reset" class="reset" value="Cancel" />
+          <input type="submit" class="submit" value="Create Account" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
