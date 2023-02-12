@@ -1,17 +1,8 @@
-@font-face {
-  font-family: 'Twister';
-  src: url(/assets/font/Twister.ttf);
-}
-
-@font-face {
-  font-family: 'Devasia Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Devasia Regular'),
-    url('/assets/font/Devasia-Regular.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 
 * {
   text-decoration: none;
@@ -27,7 +18,7 @@ body {
   background-color: #1d1c1c;
 }
 main {
-  background-image: url(/assets/img/bg.png);
+  background-image: url('file:///D:/TIP%20PROJECT%20ECOM/assets/img/bg.png');
   height: 100vh;
   padding: 1em;
 }
@@ -109,7 +100,7 @@ main {
   justify-content: center;
 }
 .col_1 > .tt_dev {
-  font-family: 'Devasia Regular';
+  font-family: 'Dorsa', sans-serif;
   font-size: 12rem;
   line-height: 0.8;
   letter-spacing: 0.5rem;
@@ -130,7 +121,7 @@ main {
   letter-spacing: 0.5rem;
 }
 .col_1 > .tt_twi {
-  font-family: 'Twister';
+  font-family: 'Allura', cursive;
   font-size: 10rem;
   line-height: 0.9;
   letter-spacing: 0.1rem;
@@ -169,7 +160,7 @@ main {
 
 @media screen and (max-width: 1060px) {
   .col_1 > .tt_dev {
-    font-family: 'Devasia Regular';
+    font-family: 'Dorsa', sans-serif;
     font-size: 7rem;
     line-height: 0.8;
     letter-spacing: 0.2rem;
@@ -190,7 +181,7 @@ main {
     letter-spacing: 0.1rem;
   }
   .col_1 > .tt_twi {
-    font-family: 'Twister';
+    font-family: 'Allura', cursive;
     font-size: 4rem;
     line-height: 0.9;
     letter-spacing: 0.1rem;
@@ -202,7 +193,7 @@ main {
   margin-bottom: 50px;
 }
 .title_about {
-  font-family: 'Devasia Regular';
+  font-family: 'Dorsa', sans-serif;
   text-align: center;
   padding: 0.3em;
   font-size: 6rem;
@@ -227,7 +218,7 @@ main {
 
 .card_content {
   position: absolute;
-  font-family: 'Devasia Regular';
+  font-family: 'Dorsa', sans-serif;
   font-size: 4rem;
   top: 0;
   margin-left: 50px;
@@ -243,25 +234,26 @@ main {
 
 .shop_link {
   position: relative;
-  background-color: #000;
-  border: 1px solid #000;
-  border-radius: 100px;
-  width: 100px;
-  height: 100px;
-  transition: all 0.5s ease-in-out;
 }
-.shop_link:hover {
-  background-color: #fff;
-}
+
 .shop_link > a:hover {
   color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
 }
 
 .shop_link > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 13px;
+  top: 5px;
   left: 15px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
+  background-color: #000000;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
   transition: all 0.5s ease-in-out;
 }
